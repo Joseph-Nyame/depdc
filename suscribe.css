@@ -1,14 +1,23 @@
+/* social-btn */
 
    #suscribe-text{
     font-weight: bold;
+    font-size: 50px;
     text-transform: uppercase;
     text-align: center;
     justify-content: center;
     position: relative;
-    left:2rem;
-    margin-left: 30px;
+    left:10rem;
+    margin-left: 50px;
    font-family:apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
    } 
+ 
+   @media screen and (max-width: 767px){
+    #suscribe-text{
+      font-size: 28px;
+      left: 0rem;
+    }
+   }
     .newsletter .content {
     max-width: 650px;
     margin: 0 auto;
