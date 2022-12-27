@@ -55,11 +55,11 @@
 
 
     #vote {
-      
+      background-color: #2ba805;
       -webkit-border-radius: 60px;
       border-radius: 40px;
       border: none;
-      color: #eeeeee;
+      color: #ffffff;
       cursor: pointer;
       display: inline-block;
       font-family: sans-serif;
@@ -70,12 +70,12 @@
     }
     @keyframes glowing {
       0% {
-        background-color: #2ba805;
-        box-shadow: 0 0 5px #2ba805;
+        background-color: #f6f8f6;
+        box-shadow: 0 0 5px #ececec;
       }
       50% {
-        background-color: #49e819;
-        box-shadow: 0 0 20px #49e819;
+        background-color: #ffffff;
+        box-shadow: 0 0 20px #ffffff;
       }
       100% {
         background-color: #2ba805;
