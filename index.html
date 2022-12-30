@@ -312,8 +312,183 @@ var dgxDonateAjax = {"ajaxurl":"https:\/\/liberty.themeblossom.net\/wp-admin\/ad
   box-shadow: 0px 5px 5px #888888;
 
 }
+  
+.sliding-background {
+	background-image: url('./img/gw.mp4') , url('./img/ghflag.jpeg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	margin: 0;
+  }
+  
+  .bloc-video {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	margin-left: 25px;
+  }
+  
+  .bloc-video video {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	z-index: -1;
+	position:absolute;
+	height: 100vh;
+  }
+  
+  .bloc-video .content-video {
+	flex-direction: column;
+	color: #ffffff;
+	
+	font-size: 62px;
+  }
+  
+  .bloc-video .content-video .content-text, .content-button {
+	display: flex;
+	justify-content: center;
+  }
+  
+  .bloc-video .content-video .content-button {
+	margin-top: 50px;
+  }
+  
+  .bloc-video .content-video .content-button button {
+	cursor: pointer;
+	padding: 10px;
+	width: 370px;
+	height: 60px;
+	font-size: 16px;
+	font-family: cursive;
+	background: none;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	text-transform: uppercase;
+	margin-top: 250px;
+  }
+  
+  .bloc-video .content-video .content-button button:hover {
+	transition: all .75s ease-in-out;
+	background-color: #ffffff;
+	color: #000000;
+	transform: rotateX(360deg);
+  }
+  @media screen and (max-width: 600px) {
 
-
+	.bloc-video {
+		position: relative;
+		height: 100vh;
+		width: 100%;
+		margin-left: 5px;
+	  }
+	  
+	  .bloc-video video {
+		width: 100%;
+		height: 500px;
+		object-fit: cover;
+		z-index: -1;
+		position:absolute;
+		height: 100vh;
+	  }
+	  
+	  .bloc-video .content-video {
+		flex-direction: column;
+		color: #ffffff;
+		
+		font-size: 62px;
+	  }
+	  
+	  .bloc-video .content-video .content-text, .content-button {
+		display: flex;
+		justify-content: center;
+	  }
+	  
+	  .bloc-video .content-video .content-button {
+		margin-top: 50px;
+	  }
+	  
+	  .bloc-video .content-video .content-button button {
+		cursor: pointer;
+		padding: 10px;
+		width: 370px;
+		height: 60px;
+		font-size: 16px;
+		font-family: cursive;
+		background: none;
+		color: #ffffff;
+		border: 2px solid #ffffff;
+		border-radius: 5px;
+		text-transform: uppercase;
+		margin-top: 450px;
+	  }
+	  
+	  .bloc-video .content-video .content-button button:hover {
+		transition: all .75s ease-in-out;
+		background-color: #ffffff;
+		color: #000000;
+		transform: rotateX(360deg);
+	  }
+	
+  }
+  .open-button {
+	background-color: #555;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	position: fixed;
+	width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+	display: none;
+	height: 50px;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+	width: 200px;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+	width: 300px;
+	padding: 10px;
+	background-color: rgb(5, 90, 9);
+	height: 100px;
+	float:left;
+	transition:opacity 1.3s;
+  }
+ 
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+	background-color: #04AA6D;
+	color: white;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.8;
+	height: 100px;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+	background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+	opacity: 1;
+  }
+  #myForm{
+	height: 100px;
+  }
+  #video2{
+	display:none;
+  }
+ 
 </style></head>
 
 
@@ -444,97 +619,35 @@ var dgxDonateAjax = {"ajaxurl":"https:\/\/liberty.themeblossom.net\/wp-admin\/ad
 
 <!-- Home images with carousel -->
 			<!-- START Home REVOLUTION SLIDER 6.2.23 --><p class="rs-p-wp-fix"></p>
-			<rs-module-wrap id="rev_slider_10_1_wrapper" data-source="gallery" style="background:#efefef;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
-				<rs-module id="rev_slider_10_1" class=" rs-ov-hidden" style="" data-version="6.2.23">
-					<rs-slides>
-						<rs-slide data-key="rs-21" data-title="Slide" data-anim="ei:d;eo:d;s:700;r:0;t:fade;sl:d;">
-							<img src="./img/ndcmember1.jpeg" title="Home" data-lazyload="./img/ndcmember1.jpeg" data-parallax="off" class="rev-slidebg" data-no-retina  style=" image-rendering: pixelated;">
-<!---->						</rs-slide>
-						<rs-slide data-key="rs-23" data-title="Slide" data-anim="ei:d;eo:d;s:700;r:0;t:fade;sl:d;">
-							<img src="./img/ghflag3.jpeg" title="Home" data-lazyload="./img/ghflag3.png" data-parallax="off" class="rev-slidebg" data-no-retina style=" image-rendering: pixelated;">
-<!---->						</rs-slide>
-						<rs-slide data-key="rs-24" data-title="Slide" data-anim="ei:d;eo:d;s:700;r:0;t:fade;sl:d;">
-							<img src="./img/ndcflag2.jpeg" title="Home" data-lazyload="./img/ndcflag2.jpeg" data-parallax="off" class="rev-slidebg" data-no-retina style=" image-rendering: pixelated;">
-<!---->						</rs-slide>
-						<rs-slide data-key="rs-25" data-title="Slide" data-anim="ei:d;eo:d;s:700;r:0;t:fade;sl:d;">
-							<img src="./img/amissah.jpeg" title="Home" data-lazyload="./img/amissah.jpeg" data-parallax="off" class="rev-slidebg" data-no-retina style=" image-rendering: pixelated;">
-<!---->						</rs-slide>
-					</rs-slides>
-					<rs-static-layers>
-						<!--
+			
+				<!-- <div class="sliding-background" style="width: 100%; height: 500px;"></div> -->
+				<div class="bloc-video">
+					<video autoplay muted loop id="video">
+					<source src="./img/gw2.mp4" type="video/mp4" >
+					</video>
+					<video autoplay muted loop id="video2">
+						<source src="./img/gwm.mp4" type="video/mp4" >
+					</video>
+					<div class="content-video">
+					<div class="content-text">
+					  <!-- <h1>River</h1> -->
+					</div>
+					<div class="content-button">
+						<a href="#suscribe">
+						<button type="button" class="btn" >Click To Suscribe To Our NewsLetter</button>
+					</a>
+					 </div>
+				  </div>
+				<script type="text/javascript">
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
 
-							--><!--
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+				</script>
 
-							--><rs-layer
-								id="slider-10-slide-4-layer-2" 
-								class="Slider-Title rs-layer-static"
-								data-type="text"
-								data-color="rgba(255,255,255,1)"
-								data-rsp_ch="on"
-								data-xy="x:c;y:c;yo:-35px;"
-								data-text="s:38;l:55;a:center;"
-								data-onslides="s:1;"
-								data-padding="b:10;"
-								data-frame_0="tp:600;"
-								data-frame_1="tp:600;e:power2.inOut;st:800;sp:1000;"
-								data-frame_999="o:0;tp:600;e:nothing;st:w;"
-								style="z-index:6;font-family:Lora;text-align:center;"
-							>
-							</rs-layer><!--
-
-							--><rs-layer
-								id="slider-10-slide-4-layer-3" 
-								class="Slider-Title rs-layer-static"
-								data-type="text"
-								data-color="rgba(255,255,255,1)"
-								data-rsp_ch="on"
-								data-xy="x:c;y:c;yo:15px;"
-								data-text="s:38;l:55;a:center;"
-								data-onslides="s:1;"
-								data-padding="b:10;"
-								data-frame_0="tp:600;"
-								data-frame_1="tp:600;e:power2.inOut;st:1050;sp:1000;"
-								data-frame_999="o:0;tp:600;e:nothing;st:w;"
-								style="z-index:7;font-family:Lora;text-align:center;"
-							>
-							<section class="newsletter">
-								<div class="container">
-								<div class="row">
-								<div class="">
-									<div class="content">
-										<h2 id="suscribe-text" style="color: white;">Welcome Home</h2>
-									<div>
-										<input type="email" id="mail"  placeholder="Enter email">
-										
-										<button type="button" class="btn btn-success" id="susB" style="">Suscribe</button>
-										
-									    
-										  </div>
-									</div>
-								</div>
-								</div>
-								</div>
-								</section>
-							</rs-layer><!--
-
-							--><rs-layer
-								id="slider-10-slide-4-layer-4" 
-								class="Slider-Title2 rs-layer-static"
-								data-type="text"
-								data-color="rgba(255,255,255,1)"
-								data-rsp_ch="on"
-								data-xy="x:c;y:c;yo:65px;"
-								data-text="s:18;l:55;a:center;"
-								data-onslides="s:1;"
-								data-padding="b:10;"
-								data-frame_0="tp:600;"
-								data-frame_1="tp:600;e:power2.inOut;st:1200;sp:1000;"
-								data-frame_999="o:0;tp:600;e:nothing;st:w;"
-								style="z-index:8;font-family:Lora;text-align:center;"
-							>
-							</rs-layer><!--
-					--></rs-static-layers>
-				</rs-module>
 				<script type="text/javascript">
 					setREVStartSize({c: 'rev_slider_10_1',rl:[1240,1024,778,480],el:[],gw:[1170],gh:[550],type:'standard',justify:'',layout:'fullwidth',mh:"0"});
 					var	revapi10,
@@ -575,7 +688,7 @@ var dgxDonateAjax = {"ajaxurl":"https:\/\/liberty.themeblossom.net\/wp-admin\/ad
 				var once_revslider101 = false;
 				if (document.readyState === "loading") {document.addEventListener('readystatechange',function() { if((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider101 ) { once_revslider101 = true; revinit_revslider101();}});} else {once_revslider101 = true; revinit_revslider101();}
 				</script>
-			</rs-module-wrap>
+			
 			<!-- END REVOLUTION SLIDER -->
 	</div>
 </div></div>
@@ -623,7 +736,7 @@ window.newsletter_check = function (f) {
 //]]&gt;
 </script>
 
-<div class="newsletter newsletter-subscription">
+<div class="newsletter newsletter-subscription" >
 <form method="post" action="#" onsubmit="return newsletter_check(this)">
 
 
@@ -1559,14 +1672,14 @@ window.newsletter_check = function (f) {
 //]]>
 </script>
 
-<div class="newsletter newsletter-subscription" >
-<form method="post" action="#" onsubmit="return newsletter_check(this)">
+<div class="newsletter newsletter-subscription">
+<form method="post" action="#" onsubmit="return newsletter_check(this)" >
 
-<div class="col-xs-12 col-md-2 hidden-xs hidden-sm">Newsletter<br>Sign Up</div>
+<div class="col-xs-12 col-md-2 hidden-xs hidden-sm" >Newsletter<br>Sign Up</div>
 
-<div class="col-xs-12 col-md-2 hidden-md hidden-lg">Newsletter Sign Up<br><br></div>
+<div class="col-xs-12 col-md-2 hidden-md hidden-lg" >Newsletter Sign Up<br><br></div>
 
-<div class="col-xs-12 col-md-4 form-group has-feedback">
+<div class="col-xs-12 col-md-4 form-group has-feedback" id="suscribe">
 <input class="newsletter-firstname" type="text" name="nn" placeholder="Your Name" style="background-color: #dde7e0;">
 <span class="glyphicon glyphicon-user form-control-feedback"></span>
 </div>
@@ -1576,7 +1689,7 @@ window.newsletter_check = function (f) {
 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
 </div>
 
-<div class="col-xs-12 col-md-2"><input class="newsletter-submit btn" type="submit" value="Subscribe" /></div>
+<div class="col-xs-12 col-md-2"><input class="newsletter-submit btn" type="submit" value="Subscribe"  /></div>
 
 
 </form>
