@@ -18,6 +18,12 @@
       left: 0rem;
     }
    }
+   @media screen and (max-width: 767px){
+    #thumbs{
+      position: relative;
+      left: 40rem;
+    }
+   }
     .newsletter .content {
     max-width: 650px;
     margin: 0 auto;
@@ -56,22 +62,10 @@
       width: 100px;
       height: 100px;
       
-      position: relative;
-      animation-name: example;
-      animation-name: my-animation;
-  animation-duration: 2s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;;
+    
     }
     
-    @keyframes example {
-      /* 0%   { left:0px; right:0px;} */
-      /* 25%  { left:200px; right:0px;} */
-      50%  { left:200px; right:200px;}
-      75%  { left:0px; right:200px;}
-      100% { left:0px; right:0px;}
-    }
+   
 
     #vote {
       background-color: #2ba805;
